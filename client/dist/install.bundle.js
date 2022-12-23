@@ -1,1 +1,1 @@
-(()=>{const e=document.getElementById("buttonInstall");window.addEventListener("beforeinstallprompt",(e=>{})),e.addEventListener("click",(async()=>{})),window.addEventListener("appinstalled",(e=>{}))})();
+(()=>{const e=document.getElementById("buttonInstall");window.addEventListener("beforeinstallprompt",(t=>{t.preventDefault(),e.classList.toggle("hidden",!1)})),e.addEventListener("click",(async t=>{t.prompt(),e.toggle("hidden",!0),console.log("it works")})),window.addEventListener("appinstalled",(e=>{console.log(`app installed ${e}`)}))})();
