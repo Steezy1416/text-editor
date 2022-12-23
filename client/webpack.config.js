@@ -27,6 +27,7 @@ module.exports = () => {
         swDest: "src-sw.js",
       }),
       new WebpackPwaManifest({
+        fingerprints: false,
         name: "text-editor",
         short_name: "text-editor",
         description: "text editor that stores text and displays it when you refresh",
